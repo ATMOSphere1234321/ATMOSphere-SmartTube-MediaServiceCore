@@ -1,3 +1,4 @@
 [submodule "SharedModules"]
 	path = SharedModules
-	url = https://github.com/yuliskov/SharedModules
+	url = git@github.com:ATMOSphere1234321/ATMOSphere-SmartTube-SharedModules.git
+	branch = main
