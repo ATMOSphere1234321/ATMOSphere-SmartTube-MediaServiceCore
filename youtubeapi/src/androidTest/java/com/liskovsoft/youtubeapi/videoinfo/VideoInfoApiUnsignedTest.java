@@ -21,7 +21,7 @@ public class VideoInfoApiUnsignedTest extends BaseVideoInfoApiTest {
         RetrofitOkHttpHelper.getAuthHeaders().clear();
     }
 
-    @Ignore("Require sign-in")
+    @Ignore("Require sign-in")  // SKIP-OK: #legacy-untriaged
     @Test
     public void testThatAgeRestrictedVideoContainsRequiredFields() {
         testThatNonLiveVideoInfoContainsRequiredFields(getVideoInfo(AppClient.WEB, TestHelpers.VIDEO_ID_AGE_RESTRICTED));

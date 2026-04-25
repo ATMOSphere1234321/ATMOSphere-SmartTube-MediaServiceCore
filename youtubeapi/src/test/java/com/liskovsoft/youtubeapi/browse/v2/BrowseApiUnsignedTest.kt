@@ -42,7 +42,7 @@ class BrowseApiUnsignedTest {
         RetrofitOkHttpHelper.disableCompression = true
     }
 
-    @Ignore("Needs setup")
+    @Ignore("Needs setup")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatHomeNotEmpty() {
         val home = getHome()
@@ -50,7 +50,7 @@ class BrowseApiUnsignedTest {
         assertNotNull("Contains videos", home?.getItems()?.getOrNull(0))
     }
 
-    @Ignore("Needs setup")
+    @Ignore("Needs setup")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatHomeCanBeContinued() {
         val home = getHome()
@@ -60,7 +60,7 @@ class BrowseApiUnsignedTest {
         checkContinuationWeb(home?.getContinuationToken())
     }
 
-    @Ignore("Needs setup")
+    @Ignore("Needs setup")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatHomeContainsAllTokens() {
         val home = getHome()
@@ -71,7 +71,7 @@ class BrowseApiUnsignedTest {
         assertNotNull("Home contains feedback token 2", item?.getFeedbackToken2())
     }
 
-    @Ignore("Needs setup")
+    @Ignore("Needs setup")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatHomeContainsSections() {
         val home = getHome()
@@ -102,7 +102,7 @@ class BrowseApiUnsignedTest {
         }
     }
 
-    @Ignore("Needs setup")
+    @Ignore("Needs setup")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatChipsCanBeContinued() {
         val home = getHome()
@@ -118,7 +118,7 @@ class BrowseApiUnsignedTest {
         checkContinuationWeb(chip?.getContinuationToken(), false) // Chips usually don't support multiple continuation
     }
 
-    @Ignore("Doesn't contains chips")
+    @Ignore("Doesn't contains chips")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatAltHomeNotEmpty() {
         val home = getAltHome()
@@ -145,7 +145,7 @@ class BrowseApiUnsignedTest {
         checkContinuationTV(nextPageKey, true)
     }
 
-    @Ignore("Don't work anymore")
+    @Ignore("Don't work anymore")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatGuideNotEmpty() {
         val guide = getGuide()
@@ -174,7 +174,7 @@ class BrowseApiUnsignedTest {
         testReelContinuation(next)
     }
 
-    @Ignore("Don't work anymore")
+    @Ignore("Don't work anymore")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testLikedMusicNotEmpty() {
         val likedMusic = getLikedMusic()
@@ -282,7 +282,7 @@ class BrowseApiUnsignedTest {
         //assertNotNull("Has title", videos?.getTitle())
     }
 
-    @Ignore("Trending was removed by YouTube")
+    @Ignore("Trending was removed by YouTube")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatTrendingNotEmpty() {
         val trending = getTrending()

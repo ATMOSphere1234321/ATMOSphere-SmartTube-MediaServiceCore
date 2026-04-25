@@ -26,7 +26,7 @@ class BrowseService2Test {
         mBrowseService2 = BrowseService2()
     }
 
-    @Ignore("Shorts may be removed by the user")
+    @Ignore("Shorts may be removed by the user")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatShortsNotEmpty() {
         val sections = mBrowseService2.getHome()
@@ -61,7 +61,7 @@ class BrowseService2Test {
         BrowseTestHelper.checkGuideMediaItem(channels?.mediaItems?.getOrNull(0)!!)
     }
 
-    @Ignore("Trending was removed by YouTube")
+    @Ignore("Trending was removed by YouTube")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatTrendingNotEmpty() {
         val trending = mBrowseService2.getTrending()

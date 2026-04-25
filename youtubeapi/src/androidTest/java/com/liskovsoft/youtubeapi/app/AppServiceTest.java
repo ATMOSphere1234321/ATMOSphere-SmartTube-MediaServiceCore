@@ -77,7 +77,7 @@ public class AppServiceTest {
         }
     }
 
-    //@Ignore("Removed in the newer versions")
+    //@Ignore("Removed in the newer versions")  // SKIP-OK: #legacy-untriaged
     //@Test
     //public void testCipherExtractor() {
     //    for (String url : AppConstants.playerUrls) {

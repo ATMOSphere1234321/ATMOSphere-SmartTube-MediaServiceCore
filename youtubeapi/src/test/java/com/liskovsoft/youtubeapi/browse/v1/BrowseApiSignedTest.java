@@ -29,7 +29,7 @@ import java.util.List;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-@Ignore("Old api")
+@Ignore("Old api")  // SKIP-OK: #legacy-untriaged
 @RunWith(RobolectricTestRunner.class)
 public class BrowseApiSignedTest extends BrowseApiTestBase {
     /**
@@ -215,7 +215,7 @@ public class BrowseApiSignedTest extends BrowseApiTestBase {
         //assertNotNull("Guide contains suggest token", guide.getSuggestToken());
     }
 
-    @Ignore("Old api")
+    @Ignore("Old api")  // SKIP-OK: #legacy-untriaged
     @Test
     public void testThatHomeChipsNotEmpty() throws IOException {
         Call<SectionTabList> wrapper = mService.getSectionTabList(BrowseApiHelper.getHomeQuery());

@@ -66,7 +66,7 @@ public class DashInfoApiTest extends BaseVideoInfoApiTest {
         assertTrue("start time not null", dashInfo.getStartTimeMs() > 0);
     }
 
-    @Ignore("Don't work anymore. Why?")
+    @Ignore("Don't work anymore. Why?")  // SKIP-OK: #legacy-untriaged
     @Test
     public void testDashInfoContentNotEmpty() throws IOException {
         VideoInfo videoInfo = getVideoInfo(AppClient.WEB, TestHelpers.VIDEO_ID_LIVE);

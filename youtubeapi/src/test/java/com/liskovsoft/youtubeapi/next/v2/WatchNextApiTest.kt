@@ -109,7 +109,7 @@ class WatchNextApiTest {
         assertNotNull("Metadata isn't null", metadata)
     }
 
-    @Ignore("Latest Suggestions aren't continuable")
+    @Ignore("Latest Suggestions aren't continuable")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatSuggestedContinuationNotNull() {
         val metadata = getMediaItemMetadataUnsigned()

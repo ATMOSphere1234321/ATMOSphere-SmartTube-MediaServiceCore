@@ -15,7 +15,7 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Test
 
-@Ignore("Not actual")
+@Ignore("Not actual")  // SKIP-OK: #legacy-untriaged
 internal class PoTokenCloudApiTest {
     private lateinit var api: PoTokenCloudApi
 
@@ -39,13 +39,13 @@ internal class PoTokenCloudApiTest {
     //    testPoTokenResponse(getPoTokenAlt())
     //}
 
-    @Ignore("server is down")
+    @Ignore("server is down")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testPoTokenOnVideoUrlPart() {
         testPoTokenResponse(getPoTokenPart())
     }
 
-    @Ignore("not used")
+    @Ignore("not used")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testHealth() = runBlocking {
         val tickle = api.healthCheck("${PO_TOKEN_CLOUD_BASE_URLS[0]}/health-check")

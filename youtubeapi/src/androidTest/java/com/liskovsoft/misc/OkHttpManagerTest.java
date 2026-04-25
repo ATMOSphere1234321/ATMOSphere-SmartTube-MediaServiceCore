@@ -27,7 +27,7 @@ import okhttp3.Response;
 public class OkHttpManagerTest {
     private static final String TAG = OkHttpManagerTest.class.getSimpleName();
 
-    @Ignore("Wrong credentials")
+    @Ignore("Wrong credentials")  // SKIP-OK: #legacy-untriaged
     @Test
     public void testSocks5Proxy() throws InterruptedException {
         String[] testUrls = {"https://www.youtube.com", "https://www.google.com"};

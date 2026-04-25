@@ -29,7 +29,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-@Ignore("Old api")
+@Ignore("Old api")  // SKIP-OK: #legacy-untriaged
 @RunWith(RobolectricTestRunner.class)
 public class BrowseApiUnsignedTest extends BrowseApiTestBase {
     private BrowseApi mService;
@@ -221,7 +221,7 @@ public class BrowseApiUnsignedTest extends BrowseApiTestBase {
         }
     }
 
-    @Ignore("Previews removed on old api")
+    @Ignore("Previews removed on old api")  // SKIP-OK: #legacy-untriaged
     @Test
     public void testThatVideoContainsAnimatedPreview() {
         Section recommended = getRecommended();

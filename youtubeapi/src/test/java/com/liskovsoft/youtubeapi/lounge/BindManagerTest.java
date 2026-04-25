@@ -77,7 +77,7 @@ public class BindManagerTest {
         assertNotNull("Contains bind data", bindData);
     }
 
-    @Ignore("Expired token")
+    @Ignore("Expired token")  // SKIP-OK: #legacy-untriaged
     @Test
     public void testThatRequestInSuccessfulRaw() throws IOException {
         Map<String, String> headers = new HashMap<>();
@@ -93,7 +93,7 @@ public class BindManagerTest {
         assertNotNull("Contains bind data", content);
     }
 
-    @Ignore("Long running test")
+    @Ignore("Long running test")  // SKIP-OK: #legacy-untriaged
     @Test
     public void testBindStream() throws IOException {
         TokenInfo screen = getScreen();

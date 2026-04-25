@@ -33,7 +33,7 @@ public class AppApiTest {
         assertTrue("Player url should ends with js", playerUrl.endsWith(".js"));
     }
 
-    @Ignore("Robolectric doesn't support loading native libraries (*.so)")
+    @Ignore("Robolectric doesn't support loading native libraries (*.so)")  // SKIP-OK: #legacy-untriaged
     @Test
     public void testThatDecipherFunctionIsValid() {
         String playerUrl = mAppServiceInt.getPlayerUrl();

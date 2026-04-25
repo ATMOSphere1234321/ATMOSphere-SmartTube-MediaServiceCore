@@ -38,7 +38,7 @@ public class ActionsApiTest {
         testThatLikeIsWorking(TestHelpers.VIDEO_ID_CAPTIONS);
     }
 
-    @Ignore("Error 429, Resource has been exhausted (e.g. check quota)")
+    @Ignore("Error 429, Resource has been exhausted (e.g. check quota)")  // SKIP-OK: #legacy-untriaged
     @Test
     public void testThatSubscribeIsWorking() throws InterruptedException {
         // Error 429, Resource has been exhausted (e.g. check quota)

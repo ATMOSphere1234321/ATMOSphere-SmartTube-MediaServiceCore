@@ -16,7 +16,7 @@ import retrofit2.Call;
 
 import static org.junit.Assert.assertNotNull;
 
-@Ignore("Old api")
+@Ignore("Old api")  // SKIP-OK: #legacy-untriaged
 @RunWith(RobolectricTestRunner.class)
 public class WatchNextApiSignedTest extends WatchNextManagerTestBase {
     private WatchNextApi mManager;

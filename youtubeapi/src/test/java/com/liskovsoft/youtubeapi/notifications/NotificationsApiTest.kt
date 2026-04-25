@@ -13,7 +13,7 @@ import org.robolectric.shadows.ShadowLog
 import org.junit.Assert.assertNotNull
 import org.junit.Ignore
 
-@Ignore("Won't work with TV auth headers")
+@Ignore("Won't work with TV auth headers")  // SKIP-OK: #legacy-untriaged
 @RunWith(RobolectricTestRunner::class)
 class NotificationsApiTest {
     /**

@@ -248,7 +248,7 @@ class BrowseApiSignedTest {
         assertNotNull("Has playlist", result?.getItems())
     }
 
-    @Ignore("Doesn't work with tv")
+    @Ignore("Doesn't work with tv")  // SKIP-OK: #legacy-untriaged
     @Test
     fun testThatGuideNotEmpty() {
         val guide = getGuide()
