@@ -1,3 +1,32 @@
+## INHERITED FROM Helix Constitution
+
+> Base agent rules live in the Helix Constitution submodule at the
+> parent project's `constitution/AGENTS.md` and the universal
+> `constitution/Constitution.md` it references. **READ THOSE FIRST.**
+> The base file is authoritative for any topic not covered here.
+> Module-specific rules below extend them; they never weaken them.
+
+Critical universal rules every CLI agent (Claude Code, Cursor, Aider,
+Codex, Gemini CLI) MUST honour while working in this module:
+
+- **No bluffing.** Every PASS carries positive evidence. Constitution §11.4.
+- **Mutation-paired gates.** Every new gate has a paired mutation
+  proving it catches regressions. Constitution §1.1.
+- **No guessing language** (`likely`, `probably`, `maybe`, `seems`).
+  Constitution §11.4.6.
+- **Credentials never tracked.** `.env` patterns git-ignored; runtime-load
+  only. Constitution §11.4.10.
+- **Never force-push.** Force-push requires explicit per-session
+  authorization AND a green §9.1.5 post-op gate. Constitution §9.
+- **CONTINUATION.md kept in sync** in every non-trivial commit.
+  Constitution §12.10.
+- **60% RAM cap.** Heavy work wrapped in bounded execution scope.
+  Constitution §12.6.
+
+Canonical reference: <https://github.com/HelixDevelopment/HelixConstitution>
+
+---
+
 # AGENTS.md — smarttube-player / MediaServiceCore submodule
 
 Every AI agent working in this submodule MUST comply with the canonical
@@ -457,6 +486,18 @@ The auto-generated `docs/Issues_Summary.md` includes the Status column. All thre
 **Canonical authority:** parent
 [`docs/guides/ATMOSPHERE_CONSTITUTION.md`](docs/guides/ATMOSPHERE_CONSTITUTION.md)
 §11.4.15. Pre-build gates `CM-ITEM-STATUS-TRACKING` + `CM-COVENANT-114-15-PROPAGATION`.
+
+Non-compliance is a release blocker regardless of context.
+
+**§11.4.16 — Item-type tracking mandate (User mandate, 2026-05-14)**
+
+Every active item in `docs/Issues.md` carries a `**Type:**` line with one of three values: `Bug` (product defect / regression / user-visible broken behaviour), `Feature` (new capability not previously offered to end users), `Task` (internal workstream — refactor, doc, infra, gate, audit; the lowest-stakes default when ambiguous). The vocabulary is CLOSED — no other value is permitted.
+
+The auto-generated `docs/Issues_Summary.md` includes the Type column. All three file types (`.md`, `.html`, `.pdf`) MUST be in sync at all times — enforced by `CM-DOCS-EXPORT-SYNC` (§11.4.12 + §11.4.15 + §11.4.16 amendment).
+
+**Canonical authority:** parent
+[`docs/guides/ATMOSPHERE_CONSTITUTION.md`](docs/guides/ATMOSPHERE_CONSTITUTION.md)
+§11.4.16. Pre-build gates `CM-ITEM-TYPE-TRACKING` + `CM-COVENANT-114-16-PROPAGATION`.
 
 Non-compliance is a release blocker regardless of context.
 
