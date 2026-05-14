@@ -5,6 +5,8 @@
 /android.keystore
 /android-upd2.keystore
 build.log
+firebase-debug.log
+firebase-debug.*.log
 notes.txt
 deps.txt
 /releases
